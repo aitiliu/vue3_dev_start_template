@@ -7,7 +7,6 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-//import { mapMutations } from 'vuex';
 import axios from 'axios';
 import Storage from '@/api/storage';
 
@@ -19,7 +18,7 @@ export default defineComponent({
           email: 'eddie@test.com',
           password: '123qwe',
           name: 'eddie' });
-    //  this.setToken(response.data.token); // 将 token 存储到 Vuex store 和 localStorage 中
+    //  this.setToken(response.data.token); // 将 token 存储到  store 和 localStorage 中
        // console.log('login');
       //  console.log(response.data.access_token);
         localStorage.setItem('token', response.data.access_token);
@@ -27,7 +26,7 @@ export default defineComponent({
         localStorage.setItem('user_name', response.data.user.name);
     },
     logout() {
-     // this.clearToken(); // 从 Vuex store 和 localStorage 中删除 token
+     // this.clearToken(); // 从  store 和 localStorage 中删除 token
      console.log('logout');
     },
   },

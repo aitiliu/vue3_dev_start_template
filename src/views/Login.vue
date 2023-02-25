@@ -6,10 +6,6 @@
   </template>
   
   <script lang="ts" setup>
-  //import { defineComponent } from 'vue';
-  //import { mapMutations } from 'vuex';
-  //import axios from 'axios';
-  //import Storage from '@/api/storage';
   import { request } from "@/api/request";
   import { useRouter } from "vue-router";
   
